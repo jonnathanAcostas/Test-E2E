@@ -36,16 +36,7 @@ public class AddProductPage implements Task {
                 Click.on(ShopPageInterface.BTN_CART),
 
                 WaitUntil.the(ShopPageInterface.BTN_PLACE_ORDER, isVisible()).forNoMoreThan(20).seconds(),
-                Click.on(ShopPageInterface.BTN_PLACE_ORDER),
-
-                WaitUntil.the(ShopPageInterface.BTN_CHECKOUT, isVisible()).forNoMoreThan(20).seconds(),
-                Click.on(ShopPageInterface.BTN_CHECKOUT),
-
-                WaitUntil.the(ShopPageInterface.BTN_GUEST_CHECKOUT, isVisible()).forNoMoreThan(20).seconds(),
-                Click.on(ShopPageInterface.BTN_GUEST_CHECKOUT),
-
-                WaitUntil.the(ShopPageInterface.BTN_CONTINUE, isVisible()).forNoMoreThan(20).seconds(),
-                Click.on(ShopPageInterface.BTN_CONTINUE)
+                Click.on(ShopPageInterface.BTN_PLACE_ORDER)
         );
     }
 

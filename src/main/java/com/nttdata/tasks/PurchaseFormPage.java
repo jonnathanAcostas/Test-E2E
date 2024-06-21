@@ -41,48 +41,24 @@ public class PurchaseFormPage implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                WaitUntil.the(PurchasePageInterface.INP_FIRST_NAME, isVisible()).forNoMoreThan(20).seconds(),
-                Enter.theValue(name).into(PurchasePageInterface.INP_FIRST_NAME),
+                WaitUntil.the(PurchasePageInterface.INP_NAME, isVisible()).forNoMoreThan(20).seconds(),
+                Enter.theValue(name).into(PurchasePageInterface.INP_NAME),
 
-                WaitUntil.the(PurchasePageInterface.INP_LAST_NAME, isVisible()).forNoMoreThan(20).seconds(),
-                Enter.theValue(country).into(PurchasePageInterface.INP_LAST_NAME),
+                WaitUntil.the(PurchasePageInterface.INP_COUNTRY, isVisible()).forNoMoreThan(20).seconds(),
+                Enter.theValue(country).into(PurchasePageInterface.INP_COUNTRY),
 
                 WaitUntil.the(PurchasePageInterface.INP_CITY, isVisible()).forNoMoreThan(20).seconds(),
                 Enter.theValue(city).into(PurchasePageInterface.INP_CITY),
 
-                WaitUntil.the(PurchasePageInterface.INP_EMAIL, isVisible()).forNoMoreThan(20).seconds(),
-                Enter.theValue(credit_card).into(PurchasePageInterface.INP_EMAIL),
+                WaitUntil.the(PurchasePageInterface.INP_CARD, isVisible()).forNoMoreThan(20).seconds(),
+                Enter.theValue(credit_card).into(PurchasePageInterface.INP_CARD),
 
-                WaitUntil.the(PurchasePageInterface.INP_PHONE, isVisible()).forNoMoreThan(20).seconds(),
-                Enter.theValue(month).into(PurchasePageInterface.INP_PHONE),
+                WaitUntil.the(PurchasePageInterface.INP_MONTH, isVisible()).forNoMoreThan(20).seconds(),
+                Enter.theValue(month).into(PurchasePageInterface.INP_MONTH),
 
-                WaitUntil.the(PurchasePageInterface.INP_ADDRESS, isVisible()).forNoMoreThan(20).seconds(),
-                Enter.theValue(year).into(PurchasePageInterface.INP_ADDRESS),
+                WaitUntil.the(PurchasePageInterface.INP_YEAR, isVisible()).forNoMoreThan(20).seconds(),
+                Enter.theValue(year).into(PurchasePageInterface.INP_YEAR),
 
-
-
-
-
-                WaitUntil.the(PurchasePageInterface.INP_COUNTRY, isVisible()).forNoMoreThan(20).seconds(),
-                Click.on(PurchasePageInterface.INP_COUNTRY),
-
-                WaitUntil.the(PurchasePageInterface.OPT_REGION, isVisible()).forNoMoreThan(20).seconds(),
-                Click.on(PurchasePageInterface.OPT_REGION),
-
-                WaitUntil.the(PurchasePageInterface.INP_REGION, isVisible()).forNoMoreThan(20).seconds(),
-                Click.on(PurchasePageInterface.INP_REGION),
-
-                WaitUntil.the(PurchasePageInterface.BTN_CONTINUE, isVisible()).forNoMoreThan(20).seconds(),
-                Click.on(PurchasePageInterface.BTN_CONTINUE),
-
-                WaitUntil.the(PurchasePageInterface.BTN_NEXT, isVisible()).forNoMoreThan(20).seconds(),
-                Click.on(PurchasePageInterface.BTN_NEXT),
-
-                WaitUntil.the(PurchasePageInterface.BTN_TERMS, isVisible()).forNoMoreThan(20).seconds(),
-                Click.on(PurchasePageInterface.BTN_TERMS),
-
-                WaitUntil.the(PurchasePageInterface.BTN_NEXT_2, isVisible()).forNoMoreThan(20).seconds(),
-                Click.on(PurchasePageInterface.BTN_NEXT_2),
 
                 WaitUntil.the(PurchasePageInterface.BTN_CONFIRM, isVisible()).forNoMoreThan(20).seconds(),
                 Click.on(PurchasePageInterface.BTN_CONFIRM)

@@ -14,5 +14,5 @@ Feature: Purchase products at opencart
     Then veo nuevo formulario
 
     Examples:
-      | name  | country    | city  | credit_card | month | year   |
-      | Smoke | Ecuador    | Quito | 123456789   | 02    | 2024   |
+      | name  | country  | city  | credit_card | month | year   |
+      | Smoke | Ecuador  | Quito | 23456789    | 02    | 2024   |

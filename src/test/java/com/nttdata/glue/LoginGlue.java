@@ -35,6 +35,10 @@ public class LoginGlue {
         );
     }
 
+    @Then("ingreso al producto$")
+    public void enterProduct() {
+    }
+
     @Then("agrego el producto al carrito$")
     public void addProduct() {
     }
