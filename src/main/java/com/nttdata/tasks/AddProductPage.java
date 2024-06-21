@@ -23,14 +23,20 @@ public class AddProductPage implements Task {
                 WaitUntil.the(ShopPageInterface.BTN_ADD_TO_CART_1, isVisible()).forNoMoreThan(20).seconds(),
                 Click.on(ShopPageInterface.BTN_ADD_TO_CART_1),
 
+                WaitUntil.the(ShopPageInterface.BTN_GO_TO_HOME, isVisible()).forNoMoreThan(20).seconds(),
+                Click.on(ShopPageInterface.BTN_GO_TO_HOME),
+
+                WaitUntil.the(ShopPageInterface.ENTER_THE_PRODUCT_2, isVisible()).forNoMoreThan(20).seconds(),
+                Click.on(ShopPageInterface.ENTER_THE_PRODUCT_2),
+
                 WaitUntil.the(ShopPageInterface.BTN_ADD_TO_CART_2, isVisible()).forNoMoreThan(20).seconds(),
                 Click.on(ShopPageInterface.BTN_ADD_TO_CART_2),
 
                 WaitUntil.the(ShopPageInterface.BTN_CART, isVisible()).forNoMoreThan(20).seconds(),
                 Click.on(ShopPageInterface.BTN_CART),
 
-                WaitUntil.the(ShopPageInterface.BTN_VIEW_CART, isVisible()).forNoMoreThan(20).seconds(),
-                Click.on(ShopPageInterface.BTN_VIEW_CART),
+                WaitUntil.the(ShopPageInterface.BTN_PLACE_ORDER, isVisible()).forNoMoreThan(20).seconds(),
+                Click.on(ShopPageInterface.BTN_PLACE_ORDER),
 
                 WaitUntil.the(ShopPageInterface.BTN_CHECKOUT, isVisible()).forNoMoreThan(20).seconds(),
                 Click.on(ShopPageInterface.BTN_CHECKOUT),
