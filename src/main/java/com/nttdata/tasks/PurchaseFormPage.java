@@ -14,32 +14,27 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisi
 public class PurchaseFormPage implements Task {
 
 
-    public final String first_name;
-    public final String last_name;
-    public final String email;
-    public final String phone;
-    public final String company;
-    public final String address;
-    public final String city;
-    public final String post_code;
+    public final String name;
     public final String country;
-    public final String region;
+    public final String city;
+    public final String credit_card;
+    public final String month;
+    public final String year;
 
-    public PurchaseFormPage(String first_name, String last_name, String email, String phone, String company, String address, String city, String post_code, String country, String region) {
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.email = email;
-        this.phone = phone;
-        this.company = company;
-        this.address = address;
-        this.city = city;
-        this.post_code = post_code;
+
+
+    public PurchaseFormPage(String name, String country, String city, String credit_card, String month, String year) {
+        this.name = name;
         this.country = country;
-        this.region = region;
+        this.city = city;
+        this.credit_card = credit_card;
+        this.month = month;
+        this.year = year;
+
     }
 
-    public static Performable withData(String first_name, String last_name, String email, String phone, String company, String address, String city, String post_code, String country, String region) {
-        return instrumented(PurchaseFormPage.class, first_name, last_name, email, phone, company, address, city, post_code, country, region);
+    public static Performable withData(String name, String country, String city, String credit_card, String month, String year) {
+        return instrumented(PurchaseFormPage.class, name, country, city, credit_card, month, year);
     }
 
 
@@ -47,28 +42,26 @@ public class PurchaseFormPage implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 WaitUntil.the(PurchasePageInterface.INP_FIRST_NAME, isVisible()).forNoMoreThan(20).seconds(),
-                Enter.theValue(first_name).into(PurchasePageInterface.INP_FIRST_NAME),
+                Enter.theValue(name).into(PurchasePageInterface.INP_FIRST_NAME),
 
                 WaitUntil.the(PurchasePageInterface.INP_LAST_NAME, isVisible()).forNoMoreThan(20).seconds(),
-                Enter.theValue(last_name).into(PurchasePageInterface.INP_LAST_NAME),
-
-                WaitUntil.the(PurchasePageInterface.INP_EMAIL, isVisible()).forNoMoreThan(20).seconds(),
-                Enter.theValue(email).into(PurchasePageInterface.INP_EMAIL),
-
-                WaitUntil.the(PurchasePageInterface.INP_PHONE, isVisible()).forNoMoreThan(20).seconds(),
-                Enter.theValue(phone).into(PurchasePageInterface.INP_PHONE),
-
-                WaitUntil.the(PurchasePageInterface.INP_COMPANY, isVisible()).forNoMoreThan(20).seconds(),
-                Enter.theValue(company).into(PurchasePageInterface.INP_COMPANY),
-
-                WaitUntil.the(PurchasePageInterface.INP_ADDRESS, isVisible()).forNoMoreThan(20).seconds(),
-                Enter.theValue(address).into(PurchasePageInterface.INP_ADDRESS),
+                Enter.theValue(country).into(PurchasePageInterface.INP_LAST_NAME),
 
                 WaitUntil.the(PurchasePageInterface.INP_CITY, isVisible()).forNoMoreThan(20).seconds(),
                 Enter.theValue(city).into(PurchasePageInterface.INP_CITY),
 
-                WaitUntil.the(PurchasePageInterface.INP_POST_CODE, isVisible()).forNoMoreThan(20).seconds(),
-                Enter.theValue(post_code).into(PurchasePageInterface.INP_POST_CODE),
+                WaitUntil.the(PurchasePageInterface.INP_EMAIL, isVisible()).forNoMoreThan(20).seconds(),
+                Enter.theValue(credit_card).into(PurchasePageInterface.INP_EMAIL),
+
+                WaitUntil.the(PurchasePageInterface.INP_PHONE, isVisible()).forNoMoreThan(20).seconds(),
+                Enter.theValue(month).into(PurchasePageInterface.INP_PHONE),
+
+                WaitUntil.the(PurchasePageInterface.INP_ADDRESS, isVisible()).forNoMoreThan(20).seconds(),
+                Enter.theValue(year).into(PurchasePageInterface.INP_ADDRESS),
+
+
+
+
 
                 WaitUntil.the(PurchasePageInterface.INP_COUNTRY, isVisible()).forNoMoreThan(20).seconds(),
                 Click.on(PurchasePageInterface.INP_COUNTRY),

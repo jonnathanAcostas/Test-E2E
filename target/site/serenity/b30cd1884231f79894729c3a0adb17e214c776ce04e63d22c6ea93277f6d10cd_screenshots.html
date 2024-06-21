@@ -152,7 +152,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-06-2024 23:12</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 21-06-2024 00:16</span>
     <br style="clear:left"/>
 </div>
 
@@ -211,9 +211,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Proceso de compra
+                                <span class="failing-color">Proceso de compra
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -229,79 +229,62 @@
 
     <div class="story-title">
         <h3>Scenario:</h3>
-        <div class="scenario">Given User estoy en la pagina opencart<br>When selecciono un producto del catalogo<br>Then agrego el producto al carrito<br>And veo el carrito<br>When ingreso datos &lt;first_name&gt; &lt;last_name&gt; &lt;email&gt; &lt;phone&gt; &lt;company&gt; &lt;address&gt; &lt;city&gt; &lt;post_code&gt; &lt;country&gt; &lt;region&gt;<br>Then veo nuevo formulario</div>
+        <div class="scenario">Given User estoy en la pagina opencart<br>When selecciono un producto del catalogo<br>Then ingreso al producto<br>Then agrego el producto al carrito<br>And veo el carrito<br>When ingreso datos &lt;name&gt; &lt;country&gt; &lt;city&gt; &lt;credit_card&gt; &lt;month&gt; &lt;year&gt;<br>Then veo nuevo formulario</div>
     </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Expected: an element that is visible but: no matching element found by [Button add to cart Product 2 located with: xpath: //*[@id='content']/div[2]/div[2]/div[1]/div[3]/button[1]]</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.nttdata.tasks.AddProductPage.performAs(AddProductPage.java:19)<br />com.nttdata.glue.LoginGlue.selectProduct(LoginGlue.java:33)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:56)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:330)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:51)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource16264117124750012979.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="00491869c1baaa4e26e6c5191ab1b55cbb68c4fadf690cf6bd565487586a810b.png" title=" 1: Proceso de compra ({first_name=Smoke, last_name=Acosta, email=smokefcc@gmail.com, phone=979206315, company=Casa, address=Quito, city=Quito, post_code=4548, country=Ecuador, region=sierra})" width="1295"/>
-                <img src="00491869c1baaa4e26e6c5191ab1b55cbb68c4fadf690cf6bd565487586a810b.png" title=" Given User estoy en la pagina opencart" width="1295"/>
-                <img src="00491869c1baaa4e26e6c5191ab1b55cbb68c4fadf690cf6bd565487586a810b.png" title=" User open page" width="1295"/>
-                <img src="00491869c1baaa4e26e6c5191ab1b55cbb68c4fadf690cf6bd565487586a810b.png" title=" User opens the browser at http://opencart.abstracta.us/" width="1295"/>
-                <img src="00491869c1baaa4e26e6c5191ab1b55cbb68c4fadf690cf6bd565487586a810b.png" title=" User open page (completed)" width="1295"/>
-                <img src="00491869c1baaa4e26e6c5191ab1b55cbb68c4fadf690cf6bd565487586a810b.png" title=" Given User estoy en la pagina opencart (completed)" width="1295"/>
-                <img src="00491869c1baaa4e26e6c5191ab1b55cbb68c4fadf690cf6bd565487586a810b.png" title=" When selecciono un producto del catalogo" width="1295"/>
-                <img src="4e6ac1791af6ca6cff2f275bc9dc1668f55a64c1921f924a75899211d4d65ba2.png" title=" User add product page" width="1295"/>
-                <img src="4e6ac1791af6ca6cff2f275bc9dc1668f55a64c1921f924a75899211d4d65ba2.png" title=" User clicks on Button add to cart Product 1" width="1295"/>
-                <img src="5a708cb8eceec70195fe710a7c54ad89265d217d75e665a0b7753ca82b9b9b83.png" title=" User clicks on Button add to cart Product 1 (completed)" width="1295"/>
-                <img src="0cb90148d075b81dc1f2ba74eca1eb68e13bb35ed5f70758abe9a21ffae4050a.png" title=" User clicks on Button add to cart Product 2" width="1295"/>
-                <img src="909540572190c1b8a721f307bd0e21591d47f63af7c86a4e78ceb17914a1d88e.png" title=" User clicks on Button add to cart Product 2 (completed)" width="1295"/>
-                <img src="1c5cd6a5f5088bdc3a8edb32f847520e831f83a73e0175824d44e37470f033c5.png" title=" User clicks on Button Cart" width="1295"/>
-                <img src="bc9265eee1472ab563775abbbffa1eca70dd024355ad17df4600baf85ef0dc2c.png" title=" User clicks on Button Cart (completed)" width="1295"/>
-                <img src="bc9265eee1472ab563775abbbffa1eca70dd024355ad17df4600baf85ef0dc2c.png" title=" User clicks on Button View Cart" width="1295"/>
-                <img src="f476ff76ac62c87bb0d47136c1a98696e45eb9bbca419418c3fe5185b5ba1fd6.png" title=" User clicks on Button View Cart (completed)" width="1295"/>
-                <img src="f476ff76ac62c87bb0d47136c1a98696e45eb9bbca419418c3fe5185b5ba1fd6.png" title=" User clicks on Button Checkout" width="1295"/>
-                <img src="73cc4404fea53a56a7b6b7aaddff6a042c30488115c727433d34de9c82bcacb2.png" title=" User clicks on Button Checkout (completed)" width="1295"/>
-                <img src="5dd55a7946b4575ac416c683ca13abcb16ec6493ab0daa401575388d5049fd21.png" title=" User clicks on Button Guest Checkout" width="1295"/>
-                <img src="f498639f79b1f000e891f639ae0b70fa32c4121c3e8541da83f7c0ac01c30011.png" title=" User clicks on Button Guest Checkout (completed)" width="1295"/>
-                <img src="f498639f79b1f000e891f639ae0b70fa32c4121c3e8541da83f7c0ac01c30011.png" title=" User clicks on Button Continue" width="1295"/>
-                <img src="6905e11b35983c2ee782829b21f4db96f7c165d2a8837ead50161020553fcbe0.png" title=" User clicks on Button Continue (completed)" width="1295"/>
-                <img src="6905e11b35983c2ee782829b21f4db96f7c165d2a8837ead50161020553fcbe0.png" title=" User add product page (completed)" width="1295"/>
-                <img src="6905e11b35983c2ee782829b21f4db96f7c165d2a8837ead50161020553fcbe0.png" title=" When selecciono un producto del catalogo (completed)" width="1295"/>
-                <img src="e736cbf4980c5d7ac45f7ecafc7ed72e60a5b17beab0ac9dc7b38319b3d0077f.png" title=" Then agrego el producto al carrito" width="1295"/>
-                <img src="bf45ba99615a36ecd77f99fc50f25344e8ae6d512ed4579bed7fa05676f1201b.png" title=" Then agrego el producto al carrito (completed)" width="1295"/>
-                <img src="bf45ba99615a36ecd77f99fc50f25344e8ae6d512ed4579bed7fa05676f1201b.png" title=" And veo el carrito" width="1295"/>
-                <img src="3ea157d6fbf02cb5dee56248765e5a2f7c1e659659942aded4a430e86c06e539.png" title=" And veo el carrito (completed)" width="1295"/>
-                <img src="3ea157d6fbf02cb5dee56248765e5a2f7c1e659659942aded4a430e86c06e539.png" title=" When ingreso datos Smoke Acosta smokefcc@gmail.com 979206315 Casa Quito Quito 4548 Ecuador sierra" width="1295"/>
-                <img src="3ea157d6fbf02cb5dee56248765e5a2f7c1e659659942aded4a430e86c06e539.png" title=" User purchase form page" width="1295"/>
-                <img src="3ea157d6fbf02cb5dee56248765e5a2f7c1e659659942aded4a430e86c06e539.png" title=" User enters 'Smoke' into Input Name" width="1295"/>
-                <img src="decdf53eb33d1250282403c374ef7c301a8bb102cb748e7628f4705a6472603b.png" title=" User enters 'Smoke' into Input Name (completed)" width="1295"/>
-                <img src="3bee5b71caaf399b3d57cd813aac7132454dd96a68539c5bea9bcab519c826cf.png" title=" User enters 'Acosta' into Input Last Name" width="1295"/>
-                <img src="015bb8179570694412cab8f84226d97ed90ef4fe25bc3cb7a2df7ca6b4e7635a.png" title=" User enters 'Acosta' into Input Last Name (completed)" width="1295"/>
-                <img src="5c0eb5ed581a2a55d5affa247ea70f7b04d03f0e898ae6771893d024f44bfbc1.png" title=" User enters 'smokefcc@gmail.com' into Input Email" width="1295"/>
-                <img src="f6cb32e28ed83b044a3cfc88a62d0c69052d3bd5c033c84fc357831818f83a23.png" title=" User enters 'smokefcc@gmail.com' into Input Email (completed)" width="1295"/>
-                <img src="07afa531ed7fab68028e92707f8e72e92c7b85fdbea87606be8d23caa842e675.png" title=" User enters '979206315' into Input Phone" width="1295"/>
-                <img src="e61577b00db5c87ef77f9d2989509a826e56f4d5180026d0b0fc80417d66fa1e.png" title=" User enters '979206315' into Input Phone (completed)" width="1295"/>
-                <img src="a02ca6c34316c96e60a1227f4e0045455289cc91beb700d77742ed91c8e1139c.png" title=" User enters 'Casa' into Input Company" width="1295"/>
-                <img src="c916fa98e1a1ddbd6624723b1d24d9287a2e282066b7cf59416b48bb996f033f.png" title=" User enters 'Casa' into Input Company (completed)" width="1295"/>
-                <img src="6561534b3fe852dbcab9d2a92676d1591eb62c201931d5da3e0e6e8691d27dbe.png" title=" User enters 'Quito' into Input Address1" width="1295"/>
-                <img src="f6994f4ffdd19b6bd71586fdffcda77c544c2082e1d368fab7b99aafb9886afc.png" title=" User enters 'Quito' into Input Address1 (completed)" width="1295"/>
-                <img src="587cd21f660a6b1acc3fb1c1bf3bd3aafba85cfa7f6293aad692c2143ee194eb.png" title=" User enters 'Quito' into Input City" width="1295"/>
-                <img src="4114c98fb34d77f55804245aa60a513d5509180b74e4b53d0862337b8d371051.png" title=" User enters 'Quito' into Input City (completed)" width="1295"/>
-                <img src="96a67598659a51c5477e69e3c0eddc6ab2b0dd6d7364be6f13092ecea514b709.png" title=" User enters '4548' into Input Post Code" width="1295"/>
-                <img src="774b26b331f4b6c7a6128016c4ff8b5a7320d15bb78977fc8936e80dc7125902.png" title=" User enters '4548' into Input Post Code (completed)" width="1295"/>
-                <img src="244ec0d99ea82872cbff2237edca0b03d35f81b5f32dd5699bf80706d9aefd73.png" title=" User clicks on Input Country" width="1295"/>
-                <img src="3dac66ca1363b787db2f00e6f9384be4f1e6daf8c2eb0830487fee0b179aa3c4.png" title=" User clicks on Input Country (completed)" width="1295"/>
-                <img src="9a6d7f5ce8490075877e6a748101a33e48d350163f4097085c44904c475b6935.png" title=" User clicks on Input Region" width="1295"/>
-                <img src="4334efe6dcaf03cde2d45d32775078d36eae143da8d745bd9ec8f1cf201a19a6.png" title=" User clicks on Input Region (completed)" width="1295"/>
-                <img src="91c8f3f0d5114c3c30464c9c9d0becf7aedd52204269c40f9e2e09e0b3629175.png" title=" User clicks on Input Region" width="1295"/>
-                <img src="63a1db21e2fa7f7409e8b4f06bf04ddc4065602af3cd89ad1c9cd48b3eca97f6.png" title=" User clicks on Input Region (completed)" width="1295"/>
-                <img src="63a1db21e2fa7f7409e8b4f06bf04ddc4065602af3cd89ad1c9cd48b3eca97f6.png" title=" User clicks on Button Continue" width="1295"/>
-                <img src="53cc8eeed2e6af2d8d1c2e29de6158c9562fb71def60a2353f837028614e962e.png" title=" User clicks on Button Continue (completed)" width="1295"/>
-                <img src="48e7e9bc145bb2291487021ed9308426580cc619b64477085cc8e72ffb5d03d7.png" title=" User clicks on Button Next" width="1295"/>
-                <img src="a0b37fa917c309477e320fe981928138595c333ea9bf113ca10274e72b52fcbb.png" title=" User clicks on Button Next (completed)" width="1295"/>
-                <img src="7a3665edc8aefea95a9ceaa3e63c754a94d85f2faae0f96c2cfbd6b80a68b504.png" title=" User clicks on Button Terms" width="1295"/>
-                <img src="7f3a474d9d3ff8f5e204471d5365a0b4b10a4b2368369b1b0b3386b6ea59c1ab.png" title=" User clicks on Button Terms (completed)" width="1295"/>
-                <img src="7f3a474d9d3ff8f5e204471d5365a0b4b10a4b2368369b1b0b3386b6ea59c1ab.png" title=" User clicks on Button Next" width="1295"/>
-                <img src="131e1fbe8c4cea214a75d388ccf756b2b2263260ca50aed26825f24d78cfe814.png" title=" User clicks on Button Next (completed)" width="1295"/>
-                <img src="bef599afd6781e0b06aa512a5f6aa80c24af536d0ec74c951bed4650ad6776eb.png" title=" User clicks on Button Confirm" width="1295"/>
-                <img src="838954e597e17081012b1883be5c53c5cf98267ffe7fd4104caa61f18774a53e.png" title=" User clicks on Button Confirm (completed)" width="1295"/>
-                <img src="838954e597e17081012b1883be5c53c5cf98267ffe7fd4104caa61f18774a53e.png" title=" User purchase form page (completed)" width="1295"/>
-                <img src="838954e597e17081012b1883be5c53c5cf98267ffe7fd4104caa61f18774a53e.png" title=" When ingreso datos Smoke Acosta smokefcc@gmail.com 979206315 Casa Quito Quito 4548 Ecuador sierra (completed)" width="1295"/>
-                <img src="838954e597e17081012b1883be5c53c5cf98267ffe7fd4104caa61f18774a53e.png" title=" Then veo nuevo formulario" width="1295"/>
-                <img src="838954e597e17081012b1883be5c53c5cf98267ffe7fd4104caa61f18774a53e.png" title=" 1: Proceso de compra ({first_name=Smoke, last_name=Acosta, email=smokefcc@gmail.com, phone=979206315, company=Casa, address=Quito, city=Quito, post_code=4548, country=Ecuador, region=sierra}) (completed): <span class='success-color'>SUCCESS</span>" width="1295"/>
+                <img src="77d49eddaba17dcc0482cf9ddd15dc92685188cf92e85688fbabf3693b97a21c.png" title=" 1: Proceso de compra ({name=Smoke, country=Ecuador, city=Quito, credit_card=123456789, month=02, year=2024})" width="1295"/>
+                <img src="77d49eddaba17dcc0482cf9ddd15dc92685188cf92e85688fbabf3693b97a21c.png" title=" Given User estoy en la pagina opencart" width="1295"/>
+                <img src="77d49eddaba17dcc0482cf9ddd15dc92685188cf92e85688fbabf3693b97a21c.png" title=" User open page" width="1295"/>
+                <img src="77d49eddaba17dcc0482cf9ddd15dc92685188cf92e85688fbabf3693b97a21c.png" title=" User opens the browser at https://www.demoblaze.com/" width="1295"/>
+                <img src="77d49eddaba17dcc0482cf9ddd15dc92685188cf92e85688fbabf3693b97a21c.png" title=" User open page (completed)" width="1295"/>
+                <img src="11fa54aa7630951a6c771e37415fe7e76d1f276aac1bb4052aae30a193d504d7.png" title=" Given User estoy en la pagina opencart (completed)" width="1295"/>
+                <img src="11fa54aa7630951a6c771e37415fe7e76d1f276aac1bb4052aae30a193d504d7.png" title=" When selecciono un producto del catalogo" width="1295"/>
+                <img src="eafe1fb3b7b848c92b80c645f4939b21002fbc6c46390203262e1d5b56e5a62c.png" title=" User add product page" width="1295"/>
+                <img src="eafe1fb3b7b848c92b80c645f4939b21002fbc6c46390203262e1d5b56e5a62c.png" title=" User clicks on Enter the Product 1" width="1295"/>
+                <img src="39526bbec77051513f73d4bca682e236986f99166f9a337e76fb66bda877c0de.png" title=" User clicks on Enter the Product 1 (completed)" width="1295"/>
+                <img src="f4fed6cdc59cdd2c96c9df5ec19ed7804de65e47387b954662acf2eb3e8f4daf.png" title=" User clicks on Button add to cart Product 1" width="1295"/>
+                <img src="8e659a40cd4cfe2905f402e11de26c500bf8832a8026112719b7b7877c579482.png" title=" User clicks on Button add to cart Product 1 (completed)" width="1295"/>
+                <img src="f11dca535b6c9126e7d0f14d556742de92c11e44d2c94835ce2e123eced36735.png" title=" User add product page (completed): <span class='failing-color'>FAILURE</span>" width="1295"/>
             </div>
         </div>
 

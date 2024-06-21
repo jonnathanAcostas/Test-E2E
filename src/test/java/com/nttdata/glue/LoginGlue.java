@@ -43,10 +43,10 @@ public class LoginGlue {
     public void viewCart() {
     }
 
-    @When("^ingreso datos (.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*)$")
-    public void form(String first_name, String last_name, String email, String phone, String company, String address1, String city, String post_code, String country, String region) {
+    @When("^ingreso datos (.*) (.*) (.*) (.*) (.*) (.*)$")
+    public void form(String name, String country, String city, String credit_card, String month, String year) {
         theActorInTheSpotlight().attemptsTo(
-                PurchaseFormPage.withData(first_name, last_name, email, phone, company, address1, city, post_code, country, region)
+                PurchaseFormPage.withData(name, country, city, credit_card, month, year)
         );
     }
 
@@ -55,4 +55,7 @@ public class LoginGlue {
     }
 
 
+    @When("ingreso datos <name> <country> <city> <credit_card> <month> <year>")
+    public void ingresoDatosNameCountryCityCredit_cardMonthYear() {
+    }
 }

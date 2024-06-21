@@ -12,7 +12,7 @@ public class OpenPage implements Task {
     public OpenPage(String url) { this.url = url; }
 
     public static Task loadPage() {
-        String url = "http://opencart.abstracta.us/";
+        String url = "https://www.demoblaze.com/";
         return instrumented(OpenPage.class, url);
     }
 

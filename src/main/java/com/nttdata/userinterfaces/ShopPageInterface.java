@@ -4,7 +4,8 @@ import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class ShopPageInterface {
-    public static final Target BTN_ADD_TO_CART_1 = Target.the("Button add to cart Product 1").located(By.xpath("//*[@id='content']/div[2]/div[1]/div[1]/div[3]/button[1]"));
+    public static final Target ENTER_THE_PRODUCT_1 = Target.the("Enter the Product 1").located(By.xpath("//*[@id='tbodyid']/div[1]/div/a"));
+    public static final Target BTN_ADD_TO_CART_1 = Target.the("Button add to cart Product 1").located(By.xpath("//*[@id='tbodyid']/div[2]/div/a"));
     public static final Target BTN_ADD_TO_CART_2 = Target.the("Button add to cart Product 2").located(By.xpath("//*[@id='content']/div[2]/div[2]/div[1]/div[3]/button[1]"));
     public static final Target BTN_CART = Target.the("Button Cart").located(By.xpath("//*[@id='cart']/button"));
     public static final Target BTN_VIEW_CART = Target.the("Button View Cart").located(By.xpath("//*[@id='cart']/ul/li[2]/div/p/a[1]"));
