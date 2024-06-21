@@ -1,0 +1,38 @@
+================================================================================
+DOCUMENTO DE HALLAZGOS Y CONCLUSIONES - PRUEBAS E2E
+================================================================================
+
+METODOLOGÍA DE PRUEBAS
+--------------------------------------------------------------------------------
+Se utilizaron las herramientas Selenium y Serenity BDD, apoyadas por Cucumber para 
+crear escenarios de prueba legibles. Este enfoque permitió simular de manera efectiva 
+el comportamiento del usuario desde la selección de productos hasta la finalización del 
+pago.
+
+HALLAZGOS PRINCIPALES
+--------------------------------------------------------------------------------
+Críticos:
+- No tiene un boton directo para agregar el producto al carrito:
+  - Descripción: Cuando estamos viendo los productos no hay un botón que permita agregar
+    al carrito directamente, toca ingresar al producto y agregar al carrito.
+  - Impacto: Se vuelve tedioso al usuario y lo desmotiva a comprar.
+
+Mayores:
+- Fallo en el formulario de pago:
+  - Descripción: El formulario no tiene validacion de tarjeta de credito.
+  - Impacto: Se puede sufrir de algun tipo de robo.
+
+ANÁLISIS Y CONCLUSIONES
+--------------------------------------------------------------------------------
+Las pruebas evidenciaron deficiencias significativas en componentes críticos del 
+sistema, como son la gestión del carrito y el proceso de pago. Estos errores poseen el 
+potencial de afectar negativamente la experiencia del usuario y la viabilidad comercial 
+del sitio web.
+
+RECOMENDACIONES
+--------------------------------------------------------------------------------
+- Revisar y corregir la lógica de actualización del carrito para garantizar que el usuario
+  siga en la web realizando sus compras
+- Realizar una correccion del formulario de Pago para que valide que la tarjeta sea valida.
+
+================================================================================
