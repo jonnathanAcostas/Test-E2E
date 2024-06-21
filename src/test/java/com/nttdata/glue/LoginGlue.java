@@ -54,11 +54,6 @@ public class LoginGlue {
         );
     }
 
-    @Then("veo nuevo formulario$")
-    public void next() {
-    }
-
-
     @When("ingreso datos <name> <country> <city> <credit_card> <month> <year>")
     public void ingresoDatosNameCountryCityCredit_cardMonthYear() {
     }

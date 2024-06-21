@@ -11,7 +11,7 @@ Feature: Purchase products at opencart
 
     # Completo el formulario de compra y finalizo la compra
     When ingreso datos <name> <country> <city> <credit_card> <month> <year>
-    Then veo nuevo formulario
+
 
     Examples:
       | name  | country  | city  | credit_card | month | year   |
