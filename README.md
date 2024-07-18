@@ -29,4 +29,9 @@ El proyecto tiene como objetivo simular la compra de 2 productos en una Web.
 	-Cucumber for Java
 	-Gherkin
 	-Test Automation
-	-Gradle 
+	-Gradle
+5. Alojamiento de reportes
+   La ruta donde se encuentran alojados los reportes es:
+   Test_E2E/build/cucumber-html-reports/
+Aqui se guardan algunos reportes y podemos verlos mediante
+ le damos click derecho sobre el archivo y escogemos la opción Open in/Browser/Chrome
