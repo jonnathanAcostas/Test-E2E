@@ -41,6 +41,7 @@ public class PurchaseFormPage implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
+
                 WaitUntil.the(PurchasePageInterface.INP_NAME, isVisible()).forNoMoreThan(20).seconds(),
                 Enter.theValue(name).into(PurchasePageInterface.INP_NAME),
 

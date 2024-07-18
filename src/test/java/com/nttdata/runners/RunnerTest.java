@@ -10,7 +10,5 @@ import org.junit.runner.RunWith;
         glue = "com.nttdata.glue",
         tags = "@happyPath"
 )
-
-
 public class RunnerTest {
 }

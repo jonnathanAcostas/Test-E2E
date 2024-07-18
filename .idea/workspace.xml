@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="0fc73156-f3e9-4fc6-87d5-f456247358de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nttdata/tasks/AddProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nttdata/tasks/AddProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nttdata/tasks/PurchaseFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nttdata/tasks/PurchaseFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nttdata/runners/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nttdata/runners/RunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-b30cd1884231f79894729c3a0adb17e214c776ce04e63d22c6ea93277f6d10cd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-b30cd1884231f79894729c3a0adb17e214c776ce04e63d22c6ea93277f6d10cd.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/b30cd1884231f79894729c3a0adb17e214c776ce04e63d22c6ea93277f6d10cd.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/b30cd1884231f79894729c3a0adb17e214c776ce04e63d22c6ea93277f6d10cd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/b30cd1884231f79894729c3a0adb17e214c776ce04e63d22c6ea93277f6d10cd.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/b30cd1884231f79894729c3a0adb17e214c776ce04e63d22c6ea93277f6d10cd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/b30cd1884231f79894729c3a0adb17e214c776ce04e63d22c6ea93277f6d10cd_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/b30cd1884231f79894729c3a0adb17e214c776ce04e63d22c6ea93277f6d10cd_screenshots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +43,34 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Test_E2E" type="f1a62948:ProjectNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Test_E2E" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Test_E2E" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="net.serenity-bdd:serenity-junit:3.6.23" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Test_E2E" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="net.serenity-bdd:serenity-junit:3.6.23" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="junit:junit:4.13.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Test_E2E" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="net.serenity-bdd:serenity-screenplay-webdriver:3.6.23" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -71,9 +108,12 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Gradle.Build Test_E2E.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Load Gradle Dependencies.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.RunnerTest (1).executor&quot;: &quot;Run&quot;,
     &quot;Gradle.RunnerTest (2).executor&quot;: &quot;Run&quot;,
     &quot;Gradle.RunnerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Test_E2E [dependencies].executor&quot;: &quot;Run&quot;,
     &quot;Karate.shop:4.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -93,6 +133,15 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.nttdata.runners" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jonpa\IdeaProjects\Test_E2E\src" />
+      <recent name="C:\Users\jonpa\IdeaProjects\Test_E2E\src\test\resources" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.RunnerTest (2)">
     <configuration name="RunnerTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -166,6 +215,28 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="Test_E2E [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="shop:4" type="KarateRunConfiguration" factoryName="KarateRunConfiguration" temporary="true">
       <option name="karatePath" value="$PROJECT_DIR$/src/test/resources/features/shop.feature:4" />
       <module name="Test_E2E.test" />
@@ -177,6 +248,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.RunnerTest (2)" />
+        <item itemvalue="Gradle.Test_E2E [dependencies]" />
         <item itemvalue="Gradle.RunnerTest (1)" />
         <item itemvalue="Gradle.RunnerTest" />
         <item itemvalue="Karate.shop:4" />
@@ -210,21 +282,36 @@
       <workItem from="1718858480730" duration="1237000" />
       <workItem from="1718859739860" duration="1053000" />
       <workItem from="1718931046476" duration="18936000" />
-      <workItem from="1718951738071" duration="387000" />
+      <workItem from="1718951738071" duration="2984000" />
+      <workItem from="1721251459539" duration="1345000" />
+      <workItem from="1721252872362" duration="3372000" />
+      <workItem from="1721256426152" duration="41000" />
+      <workItem from="1721256482659" duration="3525000" />
+      <workItem from="1721260069876" duration="51000" />
+      <workItem from="1721260130317" duration="1794000" />
+      <workItem from="1721262319548" duration="1009000" />
+      <workItem from="1721263400278" duration="7000" />
+      <workItem from="1721263495946" duration="24000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="net.thucydides.core.webdriver.DriverConfigurationError" package="net.thucydides.core.webdriver" />
           <option name="timeStamp" value="4" />
